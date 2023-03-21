@@ -15,14 +15,14 @@
 		public function index()
 		{
 			//In case we need more containers in future, we will just add them in this array.
-			//No other place to touch.
+			//No other place to change.
 			$containers = [
 				new ContainerModel(300, 200), //width * length
 				new ContainerModel(100, 100)  //width * length
 			];
 
 			//In case we need more transport in future, we will just add them here.
-			//No other place to touch.
+			//No other place to change.
 			$transport_1 = [
 				new CircleModel(50),            //radius
 				new CircleModel(50),            //radius
@@ -41,6 +41,6 @@
 			];
 
 			//Return results
-			return (new ContainerCalculator($transport_3, $containers))->results();
+			return (new ContainerCalculator($transport_1, $containers))->results();
 		}
 	}

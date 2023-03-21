@@ -4,5 +4,5 @@
 
 	require_once realpath("vendor/autoload.php");
 
-	$container_controller = new ContainerController();
-	echo $container_controller->index();
+	//results
+	echo (new ContainerController())->index();

@@ -32,7 +32,6 @@
 			$this->initialize_results_dictionary();
 			$this->calculate();
 
-			/** @var SquareModel $shape */
 			foreach ($this->dic_results as $key=>$value)
 			{
 				$results = $results. "Container:".$key.", Total:".$value."\n";
@@ -44,7 +43,7 @@
 
 		public function calculate()
 		{
-			//Looping all transport shapes/objects
+			//Looping all transport's shapes/objects
 			/** @var SquareModel $shape */
 			foreach ($this->transport as $shape)
 			{
